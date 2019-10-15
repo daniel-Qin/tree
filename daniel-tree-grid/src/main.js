@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import myPlugin from './plugin/index'
+
+Vue.use(myPlugin)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

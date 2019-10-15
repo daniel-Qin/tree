@@ -1,13 +1,22 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <div>{{msg}}</div>
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      msg: 'HelloWorld'
+    }
+  },
+  created () {
+    this.$myMethod()
+  }
 }
 </script>
 
